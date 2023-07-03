@@ -64,6 +64,18 @@ export default function App() {
         <NumResults movies={movies} />
       </Navbar>
       <MainSection>
+        {/* Method of passing elements */}
+        {/* <Box element={<MovieList movies={movies} />} />
+        <Box
+          element={
+            <>
+              <WatchedSummary watched={watched} />
+              <WatchedMoviesList watched={watched} />
+            </>
+          }
+        /> */}
+
+        {/* Method of using Component Composition (children prop) */}
         <Box>
           <MovieList movies={movies} />
         </Box>
@@ -71,7 +83,6 @@ export default function App() {
           <WatchedSummary watched={watched} />
           <WatchedMoviesList watched={watched} />
         </Box>
-        {/* <WatchedBox /> */}
       </MainSection>
     </>
   );
