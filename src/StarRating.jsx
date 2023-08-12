@@ -12,6 +12,7 @@ const starContainerStyle = {
 };
 
 function StarRating({
+  onSetRating,
   maxRating = 5,
   color = "#fcc419",
   size = 48,
@@ -21,6 +22,7 @@ function StarRating({
   const [tempRating, setTempRating] = useState(0);
   function clickHandler(i) {
     setStar(i + 1);
+    onSetRating(i+1)
   }
   const textStyle = {
     lineHeight: "1",
