@@ -1,5 +1,3 @@
-import React from 'react'
-
 function MovieList({ movies, onSelectMovie }) {
   return (
     <ul className="list list-movies">
@@ -24,4 +22,4 @@ function Movie({ movie, onSelectMovie }) {
   );
 }
 
-export default MovieList
+export default MovieList;
